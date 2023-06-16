@@ -14,10 +14,17 @@
     <link rel="stylesheet" href="./css/sectionCidades.css">
     <link rel="stylesheet" href="./css/procurados.css">
     <link rel="stylesheet" href="./css/paises.css">
+
+    <!-- CHAMADA DO BOOTSTRAP -->
+    <link rel="stylesheet" href="./acessibilidade-master/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- STYLE E CONTRASTE -->
+    <link rel='stylesheet' id='styleContraste' href="./acessibilidade-master/css/style.css" type='text/css' media='all' />
+
 </head>
 
 <body>
-    <header>
+    <header onload="checkCookie()">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 shadow p-3 mb-5 bg-white rounded">
             <a href="index.html" class="navbar-brand"> <img src="img/logo2.png" width="300px" alt="Caravan"> </a>
 
@@ -37,6 +44,19 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="login.html">Login </a>
                     </li>
+                    <div class="col-sm-4">
+                        <span class="font-con">
+                            Fonte: <button Onclick="mudaFonte('menos'); return false;" class="btn btn-secondary btn-sm">A-</button>
+                            <button Onclick="mudaFonte('padrao'); return false;" class="btn btn-secondary btn-sm">A</button>
+                            <button Onclick="mudaFonte('mais'); return false;" class="btn btn-secondary btn-sm">A+</button>
+                        </span>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="font-con">
+                            Contraste:
+                            <button id="mudaEstilo" onClick="mudaContraste()" class="btn btn-secondary btn-sm">PRETO</button>
+                        </span>
+                    </div>
                 </ul>
 
             </div>
@@ -57,7 +77,10 @@
                     </li>
                 </ul>
             </div>
+
+
         </nav>
+
     </header>
 
     <section class="anuncioImg">
@@ -92,21 +115,21 @@
     </section>
     <section class="barraFlores">
         <div class="container">
-            <div class="row">
+            <div class="row txtFontC">
                 <div class="col">
-                    <button type="button" class="btn btn-success"><a href="./tiposFlores.html" class="btn btn-success">Tipos de Flores</a></button>
+                    <button type="button" class="btn btn-success"><a href="./tiposFlores.html" class="btn btn-success txtFontC">Tipos de Flores</a></button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-success"><a href="./vasos.html" class="btn btn-success">Vasos de Flores</a></button>
+                    <button type="button" class="btn btn-success"><a href="./vasos.html" class="btn btn-success txtFontC">Vasos de Flores</a></button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-success"><a href="./buque.html" class="btn btn-success">Buquê de Flores</a></button>
+                    <button type="button" class="btn btn-success"><a href="./buque.html" class="btn btn-success txtFontC">Buquê de Flores</a></button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-success"><a href="./cestas.html" class="btn btn-success">Cestas de Flores</a></button>
+                    <button type="button" class="btn btn-success"><a href="./cestas.html" class="btn btn-success txtFontC">Cestas de Flores</a></button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-success"><a href="./cidades.html" class="btn btn-success">Cidades</a></button>
+                    <button type="button" class="btn btn-success"><a href="./cidades.html" class="btn btn-success txtFontC">Cidades</a></button>
                 </div>
             </div>
         </div>
@@ -118,22 +141,22 @@
             <div class="row">
                 <div class="col">
                     <img src="./img/astromelias/Arranjo de Astromélia no Vaso.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center"> <strong>R$135,75 </strong> - Arranjo de Astromélia no Vaso</h5>
+                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Arranjo de Astromélia no Vaso</h5>
                     <img src="./img/estrela.png" class="" width="150px" alt="">
                 </div>
                 <div class="col text-center">
                     <img src="./img/astromelias/Astromélia Amarela.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center"> <strong>R$135,75 </strong> - Buquê Astromélia Amarelo</h5>
+                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Buquê Astromélia Amarelo</h5>
                     <img src="./img/estrela.png" class="" width="150px" alt="">
                 </div>
                 <div class="col text-center">
                     <img src="./img/astromelias/Astromélia Roxa.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center"> <strong>R$135,75 </strong> - Astromélia Roxa</h5>
+                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Astromélia Roxa</h5>
                     <img src="./img/estrela.png" class="" width="150px" alt="">
                 </div>
                 <div class="col text-center">
                     <img src="./img/astromelias/Astromélia Rosa.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center"> <strong>R$135,75 </strong> - Astromelia Rosa</h5>
+                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Astromelia Rosa</h5>
                     <img src="./img/estrela.png" class="" width="150px" alt="">
                 </div>
             </div>
@@ -145,22 +168,22 @@
             <div class="row">
                 <div class="col">
                     <img src="./img/hibisco/vaso hibisco laranja.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center"> <strong>R$135,75 </strong> - Hibisco Petit Laranja</h5>
+                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Hibisco Petit Laranja</h5>
                     <img src="./img/estrela.png" class="" width="150px" alt="">
                 </div>
                 <div class="col text-center">
                     <img src="./img/hibisco/hibisco amaraelo.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center"> <strong>R$135,75 </strong> - Hibisco Amarelo</h5>
+                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Hibisco Amarelo</h5>
                     <img src="./img/estrela.png" class="" width="150px" alt="">
                 </div>
                 <div class="col text-center">
                     <img src="./img/hibisco/hibisco vermelho.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center"> <strong>R$135,75 </strong> - Hibisco Vermelho</h5>
+                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Hibisco Vermelho</h5>
                     <img src="./img/estrela.png" class="" width="150px" alt="">
                 </div>
                 <div class="col text-center">
                     <img src="./img/hibisco/hibisco rosa.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center"> <strong>R$135,75 </strong> - Hibisco Rosa</h5>
+                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Hibisco Rosa</h5>
                     <img src="./img/estrela.png" class="" width="150px" alt="">
                 </div>
             </div>
@@ -171,22 +194,22 @@
             <div class="row">
                 <div class="col">
                     <img src="./img/img begonias/begonia.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center"> <strong>R$135,75 </strong> - Begônia beleaf</h5>
+                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Begônia beleaf</h5>
                     <img src="./img/estrela.png" class="" width="150px" alt="">
                 </div>
                 <div class="col text-center">
                     <img src="./img/img begonias/Begônia cerosa.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center"> <strong>R$135,75 </strong> - Begônia cerosa</h5>
+                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Begônia cerosa</h5>
                     <img src="./img/estrela.png" class="" width="150px" alt="">
                 </div>
                 <div class="col text-center">
                     <img src="./img/img begonias/Begônia rex.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center"> <strong>R$135,75 </strong> - Begônia rex</h5>
+                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Begônia rex</h5>
                     <img src="./img/estrela.png" class="" width="150px" alt="">
                 </div>
-                <div class="col text-center">
+                <div class="col text-center ">
                     <img src="./img/img begonias/Begônia Dark Mambo.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center"> <strong>R$135,75 </strong> - Begônia Dark Mambo</h5>
+                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Begônia Dark Mambo</h5>
                     <img src="./img/estrela.png" class="" width="150px" alt="">
                 </div>
             </div>
@@ -237,22 +260,22 @@
             <div class="row">
                 <div class="col">
                     <img src="./img/img cidades/curitiba.webp" class="border border-success" width="250px" alt="">
-                    <h5 class="text-left">Curitiba</h5>
+                    <h5 class="text-left txtFontC">Curitiba</h5>
 
                 </div>
                 <div class="col text-center">
                     <img src="./img/img cidades/brasilia.webp" class="border border-success" width="250px" alt="">
-                    <h5 class="text-left">Brasilia</h5>
+                    <h5 class="text-left txtFontC">Brasilia</h5>
 
                 </div>
                 <div class="col text-center">
                     <img src="./img/img cidades/rio-de-janeiro.webp" class="border border-success" width="250px" alt="">
-                    <h5 class="text-left">Rio de janeiro</h5>
+                    <h5 class="text-left txtFontC">Rio de janeiro</h5>
 
                 </div>
                 <div class="col text-center">
                     <img src="./img/img cidades/sao-paulo.webp" class="border border-success" width="250px" alt="">
-                    <h5 class="text-left">São paulo</h5>
+                    <h5 class="text-left txtFontC">São paulo</h5>
 
                 </div>
             </div>
@@ -268,22 +291,22 @@
             <div class="row">
                 <div class="col">
                     <img src="./img/img cidades/barcelona.webp" class="border border-success" width="250px" alt="">
-                    <h5 class="text-left">Barcelona</h5>
+                    <h5 class="text-left txtFontC">Barcelona</h5>
 
                 </div>
                 <div class="col text-center">
                     <img src="./img/img cidades/berlin.webp" class="border border-success" width="250px" alt="">
-                    <h5 class="text-left">Berlin</h5>
+                    <h5 class="text-left txtFontC">Berlin</h5>
 
                 </div>
                 <div class="col text-center">
                     <img src="./img/img cidades/buenosAires.webp" class="border border-success" width="250px" alt="">
-                    <h5 class="text-left">Buenos Aires</h5>
+                    <h5 class="text-left txtFontC">Buenos Aires</h5>
 
                 </div>
-                <div class="col text-center">
+                <div class="col text-center txtFontC">
                     <img src="./img/img cidades/londres.webp" class="border border-success" width="250px" alt="">
-                    <h5 class="text-left">Londres</h5>
+                    <h5 class="text-left txtFontC">Londres</h5>
 
                 </div>
             </div>
@@ -302,7 +325,7 @@
             <div class="row">
                 <div class="col">
                     <img src="./img/maisProcurados/procurado1.png" alt="">
-                    <ul>
+                    <ul class="txtFontC">
 
                         <li>
                             <p>Floricultura Curitiba</p>
@@ -324,7 +347,7 @@
                 </div>
                 <div class="col">
                     <img src="./img/maisProcurados/procurado2.png" alt="">
-                    <ul>
+                    <ul class="txtFontC">
 
                         <li>
                             <p>Floricultura Curitiba</p>
@@ -346,7 +369,7 @@
                 </div>
                 <div class="col">
                     <img src="./img/maisProcurados/procurado3.png" alt="">
-                    <ul>
+                    <ul class="txtFontC">
 
                         <li>
                             <p>Floricultura Curitiba</p>
@@ -368,7 +391,7 @@
                 </div>
                 <div class="col">
                     <img src="./img/maisProcurados/procurado4.png" alt="">
-                    <ul>
+                    <ul class="txtFontC">
 
                         <li>
                             <p>Floricultura Curitiba</p>
@@ -399,7 +422,7 @@
                     <img src="./img/logoBranca.png" alt="">
                 </div>
                 <div class="col reset-mp logo">
-                    <p class="text-center">Dúvidas? Entre em contato.</p>
+                    <p class="text-center txtFontC">Dúvidas? Entre em contato.</p>
                 </div>
                 <div class="col">
                     <ul class="footer-icons">
@@ -417,7 +440,7 @@
 
 
 
-
+    <script src="./acessibilidade-master/js/acessibilidade.js"></script>
     <script src="./js/jquery-3.3.1.slim.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.js"></script>
