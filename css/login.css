@@ -58,7 +58,7 @@ header .navbar .nav-menu-2 li img {
 }
 
 footer {
-  min-width: calc(100vw - 1.15rem);
+  min-width: 100vw !important;
   min-height: 100px;
   background-color: #2c6d3b;
   display: flex;
@@ -112,8 +112,8 @@ body {
   align-items: center;
   flex-direction: column;
   border: 1px solid #d3d3d3;
-  padding: 1rem;
   padding: 2rem;
+  margin-top: 6rem;
 }
 .hero .logo {
   margin: 0;
@@ -153,7 +153,6 @@ body {
 .hero div .btnSubmit {
   color: white;
   padding: 0.5rem;
-  background-color: #2c6d3b;
   border: none;
   border-radius: 10px;
 }/*# sourceMappingURL=login.css.map */

@@ -28,8 +28,8 @@ body {
     align-items: center;
     flex-direction: column;
     border: 1px solid $clr-light-gray;
-    padding: 1rem;
     padding: 2rem;
+    margin-top: 6rem;
     .logo{
         margin: 0;
     }
@@ -67,7 +67,6 @@ body {
         .btnSubmit{
             color: white;
             padding: .5rem;
-            background-color: $clr-green;
             border: none;
             border-radius: 10px;
         }

@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/login.css">
   <link rel="stylesheet" href="./css/paises.css">
+  <link rel="stylesheet" href="./css/acessibilidade.css">
+
 </head>
 
 <body>
@@ -32,6 +34,19 @@
           <li class="nav-item active">
             <a class="nav-link" href="login.html">Login </a>
           </li>
+          <div class="col-sm-4">
+            <span class="font-con">
+                Fonte: <button Onclick="mudaFonte('menos'); return false;" class="btn btn-secondary btn-sm">A-</button>
+                <button Onclick="mudaFonte('padrao'); return false;" class="btn btn-secondary btn-sm">A</button>
+                <button Onclick="mudaFonte('mais'); return false;" class="btn btn-secondary btn-sm">A+</button>
+            </span>
+        </div>
+        <div class="col-sm-4">
+            <span class="font-con">
+                Contraste:
+                <button id="mudaEstilo" onClick="mudaContraste()" class="btn btn-secondary btn-sm">PRETO</button>
+            </span>
+        </div>
         </ul>
 
       </div>
@@ -72,7 +87,7 @@
             <button type="button" class="btn btn btn-outline-dark"><a href="./contato.html" class="btn btn-lg Cwhite"> Contato </a></button>
           </div>
         </div>
-        <div class="col-8 p-3 mb-2 bg-light text-dark">
+        <div class="col-8 p-3 mb-2 bg-light text-dark txtFontC">
           <div class="border-bottom">
             <h3 class="mt-2">Termos de Uso</h3>
             <p>Os presentes Termos e Condições Gerais de Uso do Site (“Termos”) serão regidos pelas cláusulas e condições seguintes e aplicam-se às relações de ISABELA FLORES INTERMEDIAÇÕES LTDA., empresa inscrita no CNPJ sob nº 10.158.838/0001-61 com sede na Av Dona Gertrudes, 273, Sala 2, Centro, São João Da Boa Vista/SP, CEP 13870-110, Brasil, doravante denominada “Isabela Flores”, com os consumidores ou adquirentes, doravante denominados “Consumidores”, a qualquer título, dos produtos anunciados nos sites geridos pela Isabela Flores.
@@ -152,6 +167,33 @@
 
 
   </section>
+
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col reset-mp logo">
+                <img src="./img/logoBranca.png" alt="">
+            </div>
+            <div class="col reset-mp logo">
+                <p class="text-center txtFontC">Dúvidas? Entre em contato.</p>
+            </div>
+            <div class="col">
+                <ul class="footer-icons">
+                    <li><a href="#"><img src="./img/imgIcones/icnoeInstagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/imgIcones/iconeFacebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/imgIcones/iconTwitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/imgIcones/icnoeTelefone.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="./js/acessibilidade.js"></script>
+  <script src="./js/jquery-3.3.1.slim.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
 
 </body>
 
