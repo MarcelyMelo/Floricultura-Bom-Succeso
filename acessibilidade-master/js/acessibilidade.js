@@ -37,14 +37,30 @@ function mudaContraste() {
     var btnStyle = document.getElementById('mudaEstilo') //ID DO BOTÃO DE MUDANÇA DE CONTRASTE
     var btnActive = btnStyle.classList.contains('active') //IDENTIFICA CLASSE ACTIVE DO BOTÃO
 
+    var img = document.querySelectorAll('img');
+    var btn = document.querySelectorAll('button');
     if (btnActive) {
         //FORMATAÇÃO DO BOTÃO, MUDANÇA DO CSS E CRIAÇÃO DO COOKIE DE CSS
+        img.forEach(element => {
+            element.classList.remove('contraste-img')
+        });
+        btn.forEach(element => {
+            element.classList.remove('btn-dark')
+            document.querySelector('footer').classList.remove('bg-dark')
+        });
         btnStyle.className = 'btn btn-dark btn-sm'
         btnStyle.innerHTML = 'PRETO'
         mudaStyleSheet('style.css')
         createCookie("styleSheet", 'style.css',365)
     } else {
         //FORMATAÇÃO DO BOTÃO, MUDANÇA DO CSS E CRIAÇÃO DO COOKIE DE CSS
+        img.forEach(element => {
+            element.classList.add('contraste-img')
+        });
+        btn.forEach(element => {
+            element.classList.add('btn-dark')
+        });
+        document.querySelector('footer').classList.add('bg-dark')
         btnStyle.className = 'active btn btn-light btn-sm'
         btnStyle.innerHTML = 'BRANCO'
         mudaStyleSheet('contraste.css')
@@ -75,6 +91,8 @@ function readCookie(name) {
     return null
 }
 
+
+
 //CHECA E APLICA OS COOKIES QUE FOREM SOLICITADOS PELA FUNÇÃO READCOOKIE()
 function checkCookie() {
 
@@ -87,7 +105,7 @@ function checkCookie() {
             item.style.fontSize = fontC+"rem"
         }
     }
-
+    
     //MUDA CONTRASTE DE ACORDO COM O COOKIE
     var contrasteCookie = readCookie('styleSheet')
     if (contrasteCookie != "") {
@@ -95,12 +113,17 @@ function checkCookie() {
         var btnActive = btnStyle.classList.contains('active')
 
         if (contrasteCookie === 'contraste.css') {
+            
             btnStyle.className = 'active btn btn-light btn-sm'
             btnStyle.innerHTML = 'BRANCO'
+            
             mudaStyleSheet('contraste.css')
         } else if(contrasteCookie === 'style.css'){
+            
             btnStyle.className = 'btn btn-dark btn-sm'
             btnStyle.innerHTML = 'PRETO'
+            
+
         }else {
             console.log('nada')
         }
