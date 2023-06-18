@@ -23,9 +23,8 @@ a {
 .logo img {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
-
 
 body {
   width: 100%;
@@ -94,6 +93,6 @@ footer .footer-icons li a img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   transform: scale(2.35);
-} /*# sourceMappingURL=global.css.map */
+}/*# sourceMappingURL=global.css.map */

@@ -12,7 +12,8 @@
 .btn-contraste {
   position: absolute;
   margin: 0;
-  right: -20rem !important;
+  right: -21.4rem !important;
+  background-color: white;
   z-index: 999;
   top: 9.5rem;
 }
@@ -20,6 +21,7 @@
   z-index: 999;
 }
 .btn-contraste span button {
+  background-color: white;
   z-index: 999;
   border: none !important;
   max-width: 3.25rem;
