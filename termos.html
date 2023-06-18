@@ -34,19 +34,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="login.html">Login </a>
           </li>
-          <div class="col-sm-4">
-            <span class="font-con">
-                Fonte: <button Onclick="mudaFonte('menos'); return false;" class="btn btn-secondary btn-sm">A-</button>
-                <button Onclick="mudaFonte('padrao'); return false;" class="btn btn-secondary btn-sm">A</button>
-                <button Onclick="mudaFonte('mais'); return false;" class="btn btn-secondary btn-sm">A+</button>
-            </span>
-        </div>
-        <div class="col-sm-4">
-            <span class="font-con">
-                Contraste:
-                <button id="mudaEstilo" onClick="mudaContraste()" class="btn btn-secondary btn-sm">PRETO</button>
-            </span>
-        </div>
+          
         </ul>
 
       </div>
@@ -72,7 +60,17 @@
 
   <section class="paises">
 
-
+    <div class="btn-contraste col-sm-4 position-fixed">
+      <span class="font-con">
+          <button id="mudaEstilo" onClick="mudaContraste()"  class="btn bg-white btn-sm"><img src="./img/acessibilidade.png" alt=""></button>
+      </span>
+  </div>
+  <div class="btn-decrease-increase col-sm-4 position-fixed">
+      <span class="font-con">
+          <button Onclick="mudaFonte('mais'); return false;" class="text-dark btn-increase bg-white btn btn-sm">A+</button>
+          <button Onclick="mudaFonte('menos'); return false;" class="text-dark btn-decrease bg-white btn btn-sm">A-</button>
+      </span>
+  </div>
     <div class="container">
       <div class="row">
         <div class="col-sm-4">

@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body class="position-relative">
     <script src="./js/acessibilidade.js"></script>
 
     <header onload="checkCookie()">
@@ -41,19 +41,6 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="login.html">Login </a>
                     </li>
-                    <div class="col-sm-4">
-                        <span class="font-con">
-                            Fonte: <button Onclick="mudaFonte('menos'); return false;" class="btn btn-secondary btn-sm">A-</button>
-                            <button Onclick="mudaFonte('padrao'); return false;" class="btn btn-secondary btn-sm">A</button>
-                            <button Onclick="mudaFonte('mais'); return false;" class="btn btn-secondary btn-sm">A+</button>
-                        </span>
-                    </div>
-                    <div class="col-sm-4">
-                        <span class="font-con">
-                            Contraste:
-                            <button id="mudaEstilo" onClick="mudaContraste()" class="btn btn-secondary btn-sm">PRETO</button>
-                        </span>
-                    </div>
                 </ul>
 
             </div>
@@ -81,7 +68,19 @@
     </header>
 
     <section class="anuncioImg">
-
+        <div class="btn-contraste col-sm-4 position-fixed">
+            <span class="font-con">
+                <button id="mudaEstilo" onClick="mudaContraste()"  class="btn bg-white btn-sm"><img src="./img/acessibilidade.png" alt=""></button>
+            </span>
+        </div>
+        <div class="btn-decrease-increase col-sm-4 position-fixed">
+            <span class="font-con">
+                <button Onclick="mudaFonte('mais'); return false;" class="btn-increase bg-white btn btn-sm">A+</button>
+                <button Onclick="mudaFonte('menos'); return false;" class="btn-decrease bg-white btn btn-sm">A-</button>
+            </span>
+        </div>
+        
+        
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -114,19 +113,19 @@
         <div class="container">
             <div class="row txtFontC">
                 <div class="col">
-                    <button onclick="window.location.href='./tiposFlores.html';" class="btn btn-success txtFontC">Tipos de Flores</button>
+                    <button onclick="window.location.href='./tiposFlores.html';" class="btn btn-success txtFontC mt-1">Tipos de Flores</button>
                 </div>
                 <div class="col">
-                    <button onclick="window.location.href='./vasos.html';" class="btn btn-success txtFontC">Vasos de Flores</button>
+                    <button onclick="window.location.href='./vasos.html';" class="btn btn-success txtFontC mt-1">Vasos de Flores</button>
                 </div>
                 <div class="col">
-                    <button onclick="window.location.href='./buque.html';" class="btn btn-success txtFontC">Buquê de Flores</button>
+                    <button onclick="window.location.href='./buque.html';" class="btn btn-success txtFontC mt-1">Buquê de Flores</button>
                 </div>
                 <div class="col">
-                    <button onclick="window.location.href='./cestas.html';" class="btn btn-success txtFontC">Cestas de Flores</button>
+                    <button onclick="window.location.href='./cestas.html';" class="btn btn-success txtFontC mt-1">Cestas de Flores</button>
                 </div>
                 <div class="col">
-                    <button onclick="window.location.href='./cidades.html';" class="btn btn-success txtFontC">Cidades</button>
+                    <button onclick="window.location.href='./cidades.html';" class="btn btn-success txtFontC mt-1">Cidades</button>
                 </div>
             </div>
         </div>

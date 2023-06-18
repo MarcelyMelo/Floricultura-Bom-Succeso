@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/vasos.css">
+  <link rel="stylesheet" href="./css/acessibilidade.css">
 </head>
 
 <body>
@@ -57,7 +58,17 @@
   </header>
 
   <section class="vasos">
-
+    <div class="btn-contraste col-sm-4 position-fixed">
+      <span class="font-con">
+          <button id="mudaEstilo" onClick="mudaContraste()"  class="btn bg-white btn-sm"><img src="./img/acessibilidade.png" alt=""></button>
+      </span>
+  </div>
+  <div class="btn-decrease-increase col-sm-4 position-fixed">
+      <span class="font-con">
+          <button Onclick="mudaFonte('mais'); return false;" class="text-dark btn-increase bg-white btn btn-sm">A+</button>
+          <button Onclick="mudaFonte('menos'); return false;" class="text-dark btn-decrease bg-white btn btn-sm">A-</button>
+      </span>
+  </div>
     <h2 class="text-left mb-4">Buquê de Flores</h2>
     <div class="container">
       <div class="row">

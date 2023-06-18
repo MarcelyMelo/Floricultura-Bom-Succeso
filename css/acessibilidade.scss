@@ -8,3 +8,46 @@
     color: white;
     border: #555 !important;
 }
+
+.btn-contraste{
+    margin: 0;
+    right: 1.9rem;
+    z-index: 999;
+    top: 9.5rem;
+    span{
+        position: absolute;
+        right: 0;
+        button{
+            border: none !important;
+            width: 3.25rem;
+            object-fit: cover;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+.btn-decrease-increase{
+    z-index: 999;
+    right: 2rem;
+    top: 12.5rem;
+    span{
+        position: absolute;
+        right: 0;
+        display: flex;
+        gap: .5rem;
+        flex-direction: column;
+        justify-content: center;
+        button{
+            font-weight: 900;
+            border: none;
+        }
+        .btn-increase{
+            font-size: 1.5rem;
+        }
+        .btn-decrease{
+            font-size: 1rem;
+        }
+    }
+}

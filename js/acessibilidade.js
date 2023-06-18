@@ -36,7 +36,8 @@ function mudaStyleSheet(sheet) {
 function mudaContraste() {
     var btnStyle = document.getElementById('mudaEstilo') //ID DO BOTÃO DE MUDANÇA DE CONTRASTE
     var btnActive = btnStyle.classList.contains('active') //IDENTIFICA CLASSE ACTIVE DO BOTÃO
-
+    document.querySelector('.btn-decrease').classList.add('text-dark');
+    document.querySelector('.btn-increase').classList.add('text-dark');
     var img = document.querySelectorAll('img');
     var btn = document.querySelectorAll('button');
     if (btnActive) {
@@ -50,8 +51,7 @@ function mudaContraste() {
             document.querySelector('footer').classList.remove('bg-dark')
         });
         document.querySelectorAll('a').forEach(element => element.classList.remove('text-dark'));
-        btnStyle.className = 'btn btn-dark btn-sm'
-        btnStyle.innerHTML = 'PRETO'
+        btnStyle.className = 'btn btn-sm'
         mudaStyleSheet('style.css')
         createCookie("styleSheet", 'style.css',365)
     } else {
@@ -65,8 +65,7 @@ function mudaContraste() {
         });
         document.querySelectorAll('a').forEach(element => element.classList.add('text-dark'));
         document.querySelector('footer').classList.add('bg-dark')
-        btnStyle.className = 'active btn btn-light btn-sm'
-        btnStyle.innerHTML = 'BRANCO'
+        btnStyle.className = 'active btn btn-sm'
         mudaStyleSheet('contraste.css')
         createCookie("styleSheet", 'contraste.css',365)
     }
