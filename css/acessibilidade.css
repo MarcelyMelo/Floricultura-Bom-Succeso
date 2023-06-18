@@ -11,7 +11,7 @@
 
 .btn-contraste {
   margin: 0;
-  right: 1.9rem;
+  right: 0;
   z-index: 999;
   top: 9.5rem;
 }
@@ -20,7 +20,9 @@
   right: 0;
 }
 .btn-contraste span button {
+  z-index: 999;
   border: none !important;
+  max-width: 3.25rem;
   width: 3.25rem;
   -o-object-fit: cover;
      object-fit: cover;
