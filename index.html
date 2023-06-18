@@ -21,7 +21,7 @@
 <body class="position-relative">
     <script src="./js/acessibilidade.js"></script>
 
-    <header onload="checkCookie()">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 shadow p-3 mb-5 bg-white rounded">
             <a href="index.html" class="navbar-brand"> <img src="img/logo2.png" width="300px" alt="Caravan"> </a>
 
@@ -44,7 +44,17 @@
                 </ul>
 
             </div>
-
+            <div class="btn-contraste col-sm-4 position-fixed">
+                <span class="font-con ml-2">
+                    <button id="mudaEstilo" onClick="mudaContraste()" class="btn bg-white btn-sm"><img src="./img/acessibilidade.png" alt=""></button>
+                </span>
+            </div>
+            <div class="btn-decrease-increase col-sm-4 position-fixed">
+                <span class="font-con">
+                    <button Onclick="mudaFonte('mais'); return false;" class="text-dark btn-increase bg-white btn btn-sm">A+</button>
+                    <button Onclick="mudaFonte('menos'); return false;" class="text-dark btn-decrease bg-white btn btn-sm">A-</button>
+                </span>
+            </div>
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
@@ -61,26 +71,18 @@
                     </li>
                 </ul>
             </div>
-
-
         </nav>
-
     </header>
 
     <section class="anuncioImg">
         <div class="btn-contraste col-sm-4">
             <span class="font-con">
-                <button id="mudaEstilo" onClick="mudaContraste()"  class="btn bg-white btn-sm position-fixed"><img src="./img/acessibilidade.png" alt=""></button>
+                <button id="mudaEstilo" onClick="mudaContraste()" class="btn bg-white btn-sm position-fixed"><img src="./img/acessibilidade.png" alt=""></button>
             </span>
         </div>
-        <!-- <div class="btn-decrease-increase col-sm-4 position-absolute">
-            <span class="font-con">
-                <button Onclick="mudaFonte('mais'); return false;" class="btn-increase bg-white btn btn-sm position-fixed">A+</button>
-                <button Onclick="mudaFonte('menos'); return false;" class="btn-decrease bg-white btn btn-sm position-fixed">A-</button>
-            </span>
-        </div> -->
-        
-        
+
+
+
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -94,9 +96,9 @@
                 <div class="carousel-item">
                     <img class="d-block w-100" src="./img/img letreiros/letreiroEntregamoshoje!.png" alt="Segundo Slide">
                 </div>
-                <!-- <div class="carousel-item">
-                    <img class="d-block w-100" src="./img/img letreiros/letreiro3.png" alt="Terceiro Slide">
-                </div> -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/img letreiros/letreiroFreteGatris.png" alt="Terceiro Slide">
+                </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -136,9 +138,11 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <img src="./img/astromelias/Arranjo de Astromélia no Vaso.png" class="border border-success" width="250px" alt="">
-                    <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Arranjo de Astromélia no Vaso</h5>
-                    <img src="./img/estrela.png" class="" width="150px" alt="">
+                    <a href="./compra.html" class="text-dark">
+                        <img src="./img/astromelias/Arranjo de Astromélia no Vaso.png" class="border border-success" width="250px" alt="">
+                        <h5 class="text-center txtFontC"> <strong>R$135,75 </strong> - Arranjo de Astromélia no Vaso</h5>
+                        <img src="./img/estrela.png" class="" width="150px" alt="">
+                    </a>
                 </div>
                 <div class="col text-center">
                     <img src="./img/astromelias/Astromélia Amarela.png" class="border border-success" width="250px" alt="">
@@ -216,6 +220,7 @@
     </section>
 
     <section class="tiosPlantas">
+
         <div class=" d-flex">
             <h2>Tipos de Flores</h2>
             <a href="./tiposFlores.html" class="btnFlor">
@@ -225,24 +230,33 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <img src="./img/img tipos de flores/Gerberas.webp" class="border border-success" width="250px" alt="">
+                    <a href="./tiposFlores.html">
+                        <img src="./img/img tipos de flores/Gerberas.webp" class="border border-success" width="250px" alt="">
+                    </a>
 
                 </div>
                 <div class="col text-center">
-                    <img src="./img/img tipos de flores/Girassois.webp" class="border border-success" width="250px" alt="">
+                    <a href="./tiposFlores.html">
+                        <img src="./img/img tipos de flores/Girassois.webp" class="border border-success" width="250px" alt="">
+                    </a>
 
                 </div>
                 <div class="col text-center">
-                    <img src="./img/img tipos de flores/Orquidea.webp" class="border border-success" width="250px" alt="">
+                    <a href="./tiposFlores.html">
+                        <img src="./img/img tipos de flores/Orquidea.webp" class="border border-success" width="250px" alt="">
+                    </a>
 
 
                 </div>
                 <div class="col text-center">
-                    <img src="./img/img tipos de flores/Rosa_rosada.webp" class="border border-success" width="250px" alt="">
+                    <a href="./tiposFlores.html">
+                        <img src="./img/img tipos de flores/Rosa_rosada.webp" class="border border-success" width="250px" alt="">
+                    </a>
 
                 </div>
             </div>
         </div>
+
     </section>
 
 
@@ -256,22 +270,30 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <img src="./img/img cidades/curitiba.webp" class="border border-success" width="250px" alt="">
+                    <a href="./cidades.html">
+                        <img src="./img/img cidades/curitiba.webp" class="border border-success" width="250px" alt="">
+                    </a>
                     <h5 class="text-center txtFontC">Curitiba</h5>
 
                 </div>
                 <div class="col text-center">
-                    <img src="./img/img cidades/brasilia.webp" class="border border-success" width="250px" alt="">
+                    <a href="./cidades.html">
+                        <img src="./img/img cidades/brasilia.webp" class="border border-success" width="250px" alt="">
+                    </a>
                     <h5 class="text-center txtFontC">Brasilia</h5>
 
                 </div>
                 <div class="col text-center">
-                    <img src="./img/img cidades/rio-de-janeiro.webp" class="border border-success" width="250px" alt="">
+                    <a href="./cidades.html">
+                        <img src="./img/img cidades/rio-de-janeiro.webp" class="border border-success" width="250px" alt="">
+                    </a>
                     <h5 class="text-center txtFontC">Rio de janeiro</h5>
 
                 </div>
                 <div class="col text-center">
-                    <img src="./img/img cidades/sao-paulo.webp" class="border border-success" width="250px" alt="">
+                    <a href="./cidades.html">
+                        <img src="./img/img cidades/sao-paulo.webp" class="border border-success" width="250px" alt="">
+                    </a>
                     <h5 class="text-center txtFontC">São paulo</h5>
 
                 </div>
@@ -287,22 +309,30 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <img src="./img/img cidades/barcelona.webp" class="border border-success" width="250px" alt="">
+                    <a href="./paises.html">
+                        <img src="./img/img cidades/barcelona.webp" class="border border-success" width="250px" alt="">
+                    </a>
                     <h5 class="text-center txtFontC">Barcelona</h5>
 
                 </div>
                 <div class="col text-center">
-                    <img src="./img/img cidades/berlin.webp" class="border border-success" width="250px" alt="">
+                    <a href="./paises.html">
+                        <img src="./img/img cidades/berlin.webp" class="border border-success" width="250px" alt="">
+                    </a>
                     <h5 class="text-center txtFontC">Berlin</h5>
 
                 </div>
                 <div class="col text-center">
-                    <img src="./img/img cidades/buenosAires.webp" class="border border-success" width="250px" alt="">
+                    <a href="./paises.html">
+                        <img src="./img/img cidades/buenosAires.webp" class="border border-success" width="250px" alt="">
+                    </a>
                     <h5 class="text-center txtFontC">Buenos Aires</h5>
 
                 </div>
                 <div class="col text-center txtFontC">
-                    <img src="./img/img cidades/londres.webp" class="border border-success" width="250px" alt="">
+                    <a href="./paises.html">
+                        <img src="./img/img cidades/londres.webp" class="border border-success" width="250px" alt="">
+                    </a>
                     <h5 class="text-center txtFontC">Londres</h5>
 
                 </div>
@@ -316,7 +346,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-7 ">
-                    <h1 class="text-center">Ecossistema Sustentavel e Inovador</h1>
+                    <h1 class="text-center">Ecossistema Sustentável e Inovador</h1>
                     <p class="mt-4">Possuímos um ecossistema de inovação formado pela colaboração de diversos agentes, como incubadoras, aceleradoras, startups, fundos de venture capital, parques tecnológicos, grandes empresas de tecnologia, associações, governo e universidades que trabalham com o mesmo propósito. <br>Nosso caminho é o da proposição de discussões, criar um circuito de pensamento que permeie toda a cadeia, com soluções coletivas e colaborativas no mercado de plantas e flores. Não é algo tão simples, é uma mudança de paradigma. Mas sinto que é uma transformação em curso e que hoje temos uma voz, um espaço de fala.</p>
                 </div>
                 <div class="col-sm m-4 bordinha img-fluid">
