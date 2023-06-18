@@ -11,13 +11,10 @@
 
 .btn-contraste {
   margin: 0;
-  right: 0;
+  right: -20rem;
   z-index: 999;
   top: 9.5rem;
-}
-.btn-contraste span {
   position: absolute;
-  right: 0;
 }
 .btn-contraste span button {
   z-index: 999;
